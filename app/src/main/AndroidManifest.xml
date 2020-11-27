@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Supervendas">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainPerfil"></activity>
+        <activity android:name=".EditarProd" />
+        <activity android:name=".VendasActivity" />
+        <activity android:name=".ProdViewActivity" />
+        <activity android:name=".ProdutosActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".CadastroActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>

@@ -3,9 +3,11 @@ package com.example.supervendas;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,6 +29,7 @@ public class CadastroActivity extends AppCompatActivity {
     private EditText editUsuario;
     private EditText editEmail;
     private EditText editSenha;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,4 +96,9 @@ public class CadastroActivity extends AppCompatActivity {
 
         });
     }
+    public void cancelar(View view){
+        Intent i = new Intent(CadastroActivity.this, LoginActivity.class);
+        startActivity(i);
+    }
+
 }
